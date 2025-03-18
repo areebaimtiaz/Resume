@@ -1,0 +1,139 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 20px;
+}
+
+/* Resume Container */
+.resume-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.resume-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #13416e;
+}
+
+.resume-section .half {
+  width: 48%;
+}
+
+/* Personal Details */
+.resume-section p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Main Resume Content */
+.resume-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-side,
+.right-side {
+  width: 48%;
+}
+
+/* Section Headings */
+h1 {
+  color: #010a13;
+}
+h2 {
+  font-size: 20px;
+  color: #175fac;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+/* Experience Section */
+.projects-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.projects-list li {
+  background: #f1f1f1;
+  padding: 8px;
+  margin-bottom: 6px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Skills Section */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background: #e3eaf1;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resume-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .resume-section .half {
+    width: 100%;
+    text-align: center;
+  }
+
+  .resume-content {
+    flex-direction: column;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+  }
+
+  .skills-list {
+    justify-content: center;
+  }
+}
